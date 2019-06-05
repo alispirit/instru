@@ -1,0 +1,373 @@
+/* *********************************************
+[Master Stylesheet]
+
+Template Name: sharpening - Creative Agency HTML5 Template
+Template Author: ali mardani
+Version: 1.0.0
+Last Update: ******
+
+*********************************************
+
+[Tables of CSS Content]
+
++ body
+    1.0 Reboot CSS
+    2.0 Spacing CSS
+    3.0 Heading CSS
+    4.0 Backtotop CSS
+    5.0 Buttons CSS
+    6.0 Header CSS
+
+
+
+  ---------------------------------------------
+  [Color Codes]
+
+  $heading: #303030; [Heading Color]
+  $text: #707070; [Text Color]
+  $bg-gray: #e7f2fd; [Gray Background]
+  $primary: #1583e9; [Primary Color]
+  $white: #ffffff; [White Color]
+  $dark: #000000; [Dark Color]
+  $border: #ebebeb; [Border Color]
+  $hover: #1583e9; [Hover Color]
+  $secondary: #a6a6a6; [Secondary Color]
+
+  ---------------------------------------------
+ [Font Family: 'iransanse']
+--------------------------------------------- */
+/* Import Fonts & All CSS */
+/*@import url(fonts/aileron-font-style.css);*/
+@import url(bootstrap4/bootstrap.min.css);
+/*@import url(css/animate.css);*/
+/*@import url(classy-nav.css);*/
+/*@import url(materialize.min.css);*/
+/*@import url(css/owl.carousel.min.css);*/
+/*@import url(css/magnific-popup.css);*/
+@import url(../fonts/fontawesome/css/all.min.css);
+@import url(./app.css);
+/*@import url(css/style.css);*/
+@import url(bootstrap-rtl.css);
+
+/* :: 1.0 Reboot CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Aileron";
+    font-weight: 400;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Aileron";
+    color: #303030;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+    /*font-family: "Aileron";*/
+    color: #303030;
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    outline: none;
+    /*font-size: 16px;*/
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 2;
+    color: #707070;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-overlay::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    font-family: 'object-fit: cover';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.mfp-iframe-holder .mfp-close {
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #1583e9;
+    text-align: center;
+    right: 0;
+    padding-right: 0;
+    line-height: 32px;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-gray {
+    background-color: #e7f2fd !important;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+/* :: 2.0 Spacing CSS */
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mr-100 {
+    margin-right: 100px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+.pt-50 {
+    padding-top: 50px !important;
+}
+
+.section-padding-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-padding-0-80 {
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+
+.section-padding-80-0 {
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+
+/* :: 3.0 Heading CSS */
+.section-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+}
+
+.section-heading h2 {
+    font-size: 48px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .section-heading h2 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-heading h2 {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-heading h2 {
+        font-size: 30px;
+    }
+}
+
+.section-heading p {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #a6a6a6;
+}
+
+/* :: 4.0 Backtotop CSS */
+#scrollUp {
+    bottom: 50px;
+    font-size: 30px;
+    line-height: 45px;
+    right: 50px;
+    width: 50px;
+    background-color: #1583e9;
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+    box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15); }
+#scrollUp:focus, #scrollUp:hover {
+    background-color: #000000;
+    color: #ffffff; }
+@media only screen and (max-width: 767px) {
+    #scrollUp {
+        right: 30px;
+        bottom: 30px; } }
+
+
+/* :: 5.0 Buttons CSS */
+
+/* :: 6.0 Header CSS */
+nav ul a,nav .brand-logo,nav .logo  {
+    color: #444;
+}
+nav .logo {
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+}
+[dir=rtl] nav ul li{
+    float: right;
+}
